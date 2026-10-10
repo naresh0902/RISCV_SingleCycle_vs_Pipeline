@@ -22,18 +22,6 @@ Both cores share the same building blocks (ALU, register file, decoders, memorie
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    IF["IF<br/>PC, IMEM, PC+4"] --> ID["ID<br/>Control, RegFile, Imm Gen"]
-    ID --> EX["EX<br/>Fwd muxes, ALU, Branch adder"]
-    EX --> MEM["MEM<br/>Data memory"]
-    MEM --> WB["WB<br/>Result mux"]
-    HU{{"Hazard Unit<br/>forward / stall / flush"}} -.-> EX
-    HU -.-> ID
-    HU -.-> IF
-    EX -. "PCSrcE, PCTargetE" .-> IF
-    WB -. "ResultW" .-> ID
-```
 
 Signal names carry a stage suffix (`_F`, `_D`, `_E`, `_M`, `_W`). Each stage module contains its own pipeline register at its output.
 
