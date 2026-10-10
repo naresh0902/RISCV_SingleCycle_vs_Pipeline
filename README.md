@@ -9,6 +9,7 @@ Both cores share the same building blocks (ALU, register file, decoders, memorie
 
 ---
 ## Architecture
+![risc_v_single_cycle_architecture.png](https://github.com/naresh0902/RISCV_SingleCycle_vs_Pipeline/blob/main/risc_v_single_cycle_architecture.png)
 ![risc_v_pipeline_architecture.png](https://github.com/naresh0902/RISCV_SingleCycle_vs_Pipeline/blob/main/risc_v_pipeline_architecture.png)
 ## Features
 
