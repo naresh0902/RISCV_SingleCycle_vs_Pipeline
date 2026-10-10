@@ -23,8 +23,6 @@ Both cores share the same building blocks (ALU, register file, decoders, memorie
 ## Architecture
 
 
-Signal names carry a stage suffix (`_F`, `_D`, `_E`, `_M`, `_W`). Each stage module contains its own pipeline register at its output.
-
 ### Hazard handling
 
 | Hazard | Detection | Action |
